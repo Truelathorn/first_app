@@ -1,3 +1,4 @@
+import 'package:first_app/Profile.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,118 +18,9 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: MyWidget(),
+      home: Profile(),
     );
   }
 }
 
-class MyWidget extends StatelessWidget {
-  const MyWidget({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Colors Layout'),
-        backgroundColor: Colors.greenAccent,
-      ),
-      backgroundColor: Colors.grey,
-      body: Center( 
-        child: Stack(
-        alignment: AlignmentDirectional.center,
-        children: [
-          Container(
-            height: 300, 
-            width: 120, 
-            decoration: BoxDecoration(
-              color: Colors.black,
-              borderRadius: BorderRadius.circular(20)
-            ),),
-          Positioned(
-            top: 15,
-            right: 20,
-            child: Container(
-              height: 80,
-              width: 80,
-              decoration: BoxDecoration(
-                color: Colors.red,
-                shape: BoxShape.circle,
-              ),
-            ),
-          ),
-          Positioned(
-            top: 110,
-            right: 20,
-            child: Container(
-              height: 80,
-              width: 80,
-              decoration: BoxDecoration(
-                color: Colors.yellow,
-                shape: BoxShape.circle,
-              ),
-            ),
-          ),
-          Positioned(
-            top: 205,
-            right: 20,
-            child: Container(
-              height: 80,
-              width: 80,
-              decoration: BoxDecoration(
-                color: Colors.green,
-                shape: BoxShape.circle,
-              ),
-            ),
-          ),
-        ],
-      ),
-
-      /*Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: [
-          SizedBox(height: 20),
-          Row(
-            children: [
-              SizedBox(width: 20),
-              Container(width: 100, height: 100, color: Colors.red),
-              SizedBox(width: 20),
-              Container(width: 100, height: 100, color: Colors.green),
-              SizedBox(width: 20),
-              Container(width: 100, height: 100, color: Colors.blue),
-            ],
-          ),
-          SizedBox(height: 20),
-          Row(
-            children: [
-              SizedBox(width: 20),
-              Expanded(flex: 1 ,child: Container(height: 100, color: Colors.yellow)),
-              SizedBox(width: 20),
-              Expanded(flex: 2 , child: Container(height: 100, color: Colors.purple)),
-              SizedBox(width: 20)
-            ],
-          ),
-        ],
-      ),
-
-      Center(
-        child: Container(
-          height: 250,
-          width: 250,
-          color: Colors.blueAccent,
-          child: Center(
-            child: Text("Hello, Tulathorn Prasertsomboon 650710690",
-              textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 24,
-              fontWeight: FontWeight.bold,
-              )
-            ),
-          )
-        )
-        Text("Hello World!",
-          style: TextStyle(fontSize: 32,
-          color: Colors.amberAccent, 
-          fontWeight: FontWeight.bold),*/
-    )
-    );
-  }
-}
