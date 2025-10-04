@@ -1,9 +1,5 @@
-import 'package:first_app/counter_widget.dart';
-import 'package:first_app/first_page.dart';
-import 'package:first_app/form_example.dart';
-import 'package:first_app/greeting_widget.dart';
-import 'package:first_app/stateful_widget.dart';
-import 'package:first_app/weatherapi.dart';
+
+import 'package:first_app/assignmentweek5.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -23,7 +19,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: WeatherApi(),
+      home: Assignmentweek5(),
     );
   }
 }
