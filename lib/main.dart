@@ -1,5 +1,5 @@
 
-import 'package:first_app/assignmentweek5.dart';
+import 'package:first_app/custom_widget.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: Assignmentweek5(),
+      home: CustomWidget(),
     );
   }
 }
